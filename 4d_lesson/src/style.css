@@ -6,20 +6,20 @@
 
 body {
     color: #262627;
+    font-family: 'Open Sans', sans-serif;
 }
 
 a {
     text-decoration: none;
 }
 
-h1 {
+.hero-title {
     font-size: 48px;
     line-height: 64px;
     margin: 0 0 40px;
-
 }
 
-img {
+.first_photo {
     display: block;
     max-width: 100%;
 }
@@ -28,10 +28,11 @@ img {
     width: 100%;
     max-width: 940px;
     margin: 0 auto;
+    padding-bottom: 100px;
 }
 
 .header .container {
-    padding: 23px 0 0px;
+    padding: 23px 0 0;
 }
 
 .header .border-shadow {
@@ -74,27 +75,97 @@ img {
 
 .about {
     width: 100%;
-    max-width: 940px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 34px;
+    height: 400px;
+    padding-top: 10px;
+    background-color: #F6F6F6;
 }
 
-.h1.text {
+.text {
     text-align: center;
-    position: absolute;
     font-size: 34px;
     line-height: 46px;
     font-style: normal;
-    font-weight: normal;
+    margin-top: 80px;
+    margin-bottom: 28px;
 }
 
-p {
+.texting {
     text-align: center;
     margin-bottom: 25px;
 }
-div.texting{
+
+.skills-container {
     width: 100%;
     max-width: 940px;
     margin: 0 auto;
+    text-align: center;
+    margin-bottom: 83px;
+}
+
+.title_skills {
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+    margin-bottom: 44px;
+}
+
+.my_skills {
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 79px;
+    line-height: 25px;
+}
+
+.image {
+    padding: 0 70px 20px 70px
+}
+
+.skills {
+    color: #828282;
+    display: inline-block;
+    padding: 0 55px;
+    line-height: 17px;
+    margin-bottom: 60px;
+}
+
+.star {
+    display: inline-block;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.portfolio {
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background-color: #F6F6F6;
+}
+
+.portfolio-images {
+    width: 100%;
+    padding: 0 254px 166px 254px;
+}
+
+.portfolio-image {
+    display: block;
+    margin-top: 67px;
+    max-width: 100%;
+    padding: 0;
+}
+
+.portfolio-paragraph {
+    margin: 15px 0 21px 0;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+.portfolio-tittle {
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+    margin:118px 0 44px 0;
 }

@@ -1,5 +1,5 @@
 * {
-    transition: all .1s ease-in;
+    transition: all 0.3s ease-in-out;
 }
 
 .head {
@@ -26,7 +26,6 @@ li {
 
 .container {
     margin: 0 auto;
-    text-align: start;
     width: 534px;
     font-family: Arial, sans-serif;
     color: #FFFFFF;
@@ -74,6 +73,7 @@ li{
 li:nth-of-type(6){
     background-color: #7A7593;
 }
+
 .list-item4:hover{
     background-color: #625E77;
 }
@@ -88,4 +88,29 @@ li:last-child {
 li:hover{
 background-color: #625E77;
     border: 2px solid white;
+}
+
+input[type='checkbox']{
+    display: none;
+}
+
+.presudo-label:before, .presudo-label1:before, .presudo-label2:before, .presudo-label3:before, .presudo-label4:before, .presudo-label5:before{
+    content: "\2714";
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+    margin: 12px 14px 0 12px;
+    background-color: #fff;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    transition: color ease-in-out 0.3s;
+}
+
+.checkbox-item:checked + .presudo-label:before, .checkbox-item1:checked + .presudo-label1:before, .checkbox-item2:checked + .presudo-label2:before, .checkbox-item3:checked + .presudo-label3:before, .checkbox-item4:checked + .presudo-label4:before, .checkbox-item5:checked + .presudo-label5:before{
+    color: black;
+}
+
+li:hover:after{
+    text-decoration: line-through;
 }

@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../fonts/webfontkit-20220127-070945/roboto-regular-webfont.woff2') format('woff2'),
+    url('../fonts/webfontkit-20220127-070945/roboto-regular-webfont.woff') format('woff'),
+    url('../fonts/webfontkit-20220127-070945/roboto-regular-webfont.ttf') format('truetype'),
+    url('../fonts/webfontkit-20220127-070945/roboto-regular-webfont.svg#robotoregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pt_sansbold';
+    src: url('../fonts/webfontkit-20220127-070945/ptsans-bold-webfont.woff2') format('woff2'),
+    url('../fonts/webfontkit-20220127-070945/ptsans-bold-webfont.woff') format('woff'),
+    url('../fonts/webfontkit-20220127-070945/ptsans-bold-webfont.ttf') format('truetype'),
+    url('../fonts/webfontkit-20220127-070945/ptsans-bold-webfont.svg#pt_sansbold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}

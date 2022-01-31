@@ -1,0 +1,37 @@
+body{
+    background-image: url("https://images.unsplash.com/photo-1554050857-c84a8abdb5e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmxhY2t8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60");
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+ul{
+list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: aqua;
+}
+
+h1{
+    text-align: center;
+}
+
+img{
+    border: 10px solid white;
+    margin-top: 85px;
+}
+
+.info{
+border: 3px solid #fca311;
+    border-radius: 50px;
+    position: absolute;
+    padding: 10px;
+}
+
+h3:hover{
+    color: cyan;
+}
+
+h4:hover{
+    color: #4d5cff;
+}

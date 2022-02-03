@@ -3,9 +3,104 @@
 <head>
 	<meta charset="UTF-8">
 	<title>lesson14</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="src/style.css">
 </head>
 <body>
-
+<div class="container">
+	<form action="#" class="form">
+		<h1 class="form__title">Create an Account</h1>
+		<div class="form-input-holder">
+			<label for="text" class="form__label-text">First Name</label>
+			<input type="text" autofocus id="text" class="form__input">
+		</div>
+		<div class="form-input-holder">
+			<label for="text1" class="form__label-text">Last Name</label>
+			<input type="text" id="text1" class="form__input">
+		</div>
+		<div class="form-input-holder">
+			<label for="email" class="form__label-text">E-mail</label>
+			<input type="email" id="email" class="form__input__email">
+			<span class="form__email-span">We'll never share your email with anyone else.</span>
+		</div>
+		<div class="form-input-holder">
+			<ul class="form__input-list">
+				<li class="form__input__item">
+					<label for="1" class="form__label-text">Male</label>
+					<input type="radio" id="1" name="radio" class="form__input__radio">
+				</li>
+				<li class="form__input__item">
+					<label for="2" class="form__label-text">Female</label>
+					<input type="radio" id="2" name="radio" class="form__input__radio">
+				</li>
+			</ul>
+			<div class="form-input-holder">
+				<label for="select" class="form__label-text">Country</label>
+				<select name="select" id="select" class="form__input form__input__select">
+					<option value="select">Select</option>
+				</select>
+			</div>
+			<div class="form-input-holder">
+				<label for="text2" class="form__label-text">City</label>
+				<input type="text" id="text2" class="form__input">
+			</div>
+			<div class="form-input-holder">
+				<button type="button" name="btn" class="form__input__email form__input__btn"></button>
+			</div>
+			<div class="form-first__desc-holder">
+				<p>By clicking the 'Sign Up' button, you confirm that you accept our <a href="#" class="desc-holder__link">Terms of Use</a> and
+					<a href="#" class="desc-holder__link">Privacy Policy</a>.</p>
+			</div>
+			<div class="form-first__bottom-text">
+				<span class="bottom-text__span">Have an account?</span><a href="#" class="bottom-text__link">Log In</a>
+			</div>
+		</div>
+	</form>
+	<form action="#" class="form">
+		<h1 class="form__title">Profile</h1>
+		<div class="form-profile">
+			<div class="form__img-holder">
+				<img src="photo/📷%20image.png" alt="image description" class="profile__image">
+			</div>
+			<div class="form-input-file">
+			<input type="file" name="file" id="file" class="form__file__input">
+				<img src="photo/Photo%20Camera.svg" alt="icon" class="file__input__icon">
+				<button type="button" class="profile__btn"><img src="photo/Trash.svg" alt="icon"></button>
+				<span class="form__email-span">Up to 1 MB (300x300 px)</span>
+			</div>
+		</div>
+		<div class="form-input-holder">
+			<label for="text3" class="form__label-text">Name</label>
+			<input type="text" id="text3" class="form__input">
+		</div>
+		<div class="form-input-holder">
+			<label for="email2" class="form__label-text">E-mail</label>
+			<input type="email" id="email2" class="form__input">
+		</div>
+		<div class="form-input-holder">
+			<label for="select1" class="form__label-text">Country</label>
+			<select name="select" id="select1" class="form__input form__input__select">
+				<option value="select">Select</option>
+			</select>
+		</div>
+		<div class="form-input-holder">
+			<label for="text5" class="form__label-text">City</label>
+			<input type="text" id="text5" class="form__input">
+		</div>
+		<div class="form-input-holder">
+			<label for="text4" class="form__label-text">Zip Code</label>
+			<input type="text" id="text4" class="form__input">
+		</div>
+		<div class="form-input-holder">
+			<label for="tel" class="form__label-text">Phone Number</label>
+			<input type="tel" id="tel" class="form__input">
+		</div>
+		<div class="form-input-file">
+			<input type="button" name="btn" id="btn" class="form__file__input">
+		</div>
+	</form>
+</div>
 </body>
 </html>

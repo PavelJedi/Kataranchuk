@@ -2,9 +2,143 @@
     box-sizing: border-box;
 }
 
-.container{
-    max-width: 1100px;
-    width: 100%;
-    padding: 0 15px;
-    margin: 0 auto;
+body {
+    font-family: 'Inter', sans-serif;
 }
+
+.container {
+    max-width: 1210px;
+    width: 100%;
+    padding: 50px;
+    margin: 0 auto;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form__title {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.form {
+    background-color: #FFFFFF;
+    padding: 0 20px;
+    max-width: 540px;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.form-input-holder {
+    color: #545454;
+    margin: 0 0 15px;
+    display: inline-block;
+}
+
+.form__label-text {
+    display: block;
+    padding-bottom: 7px;
+}
+
+.form__input {
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    width: 245px;
+    height: 38px;
+}
+
+.form__input__email {
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    width: 500px;
+    height: 38px;
+}
+
+.form__email-span {
+    font-size: 13px;
+    color: #969696;
+}
+
+.form__input-list {
+    list-style: none;
+    margin: 0 10px 0 0;
+    padding: 0 15px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form__input__radio {
+    margin-right: 30px;
+}
+
+.form__input__btn {
+    background-color: #FFFFFF;
+}
+
+.form-first__desc-holder {
+    font-size: 13px;
+    color: #969696;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E4E4E4;
+    text-align: center;
+}
+
+a {
+    color: #007BFF;
+}
+
+.form-first__bottom-text {
+    font-size: 15px;
+    text-align: center;
+    padding: 20px 0 30px 0;
+}
+
+.bottom-text__span {
+    color: #545454;
+}
+
+.form-profile {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+}
+
+.form__img-holder {
+    margin-right: 20px;
+}
+
+.form-input-file {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.form__file__input {
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    width: 138px;
+    height: 30px;
+    background-color: #FFFFFF;
+
+}
+
+.file__input__icon {
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+.profile__btn {
+    background-color: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+
+
+
+
+

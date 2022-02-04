@@ -1,4 +1,4 @@
-* {
+*, :before, :after {
     box-sizing: border-box;
 }
 
@@ -30,7 +30,7 @@ body {
     border-radius: 6px;
 }
 
-.form-input-holder {
+.form__input-holder {
     color: #545454;
     margin: 0 0 15px;
     display: inline-block;
@@ -72,6 +72,44 @@ body {
     margin-right: 30px;
 }
 
+.form__input__select {
+    position: relative;
+    display: inline-block;
+}
+
+.form__input_triangle {
+    appearance: none;
+}
+
+option{
+    color: #545454;
+}
+
+.form__input__select:before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    top: 49px;
+    right: 10px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #969696;
+}
+
+.form__input__select:after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    top: 41px;
+    right: 10px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #969696;
+    transform: rotate(180deg);
+}
+
 .form__input__btn {
     background-color: #FFFFFF;
 }
@@ -98,7 +136,7 @@ a {
     color: #545454;
 }
 
-.form-profile {
+.form__profile {
     display: flex;
     flex-wrap: wrap;
     align-items: start;
@@ -108,19 +146,32 @@ a {
     margin-right: 20px;
 }
 
-.form-input-file {
+.form__input-file {
     display: flex;
     flex-wrap: wrap;
     width: 70%;
 }
 
-.form__file__input {
+.form__label-file  {
     border: 1px solid #E4E4E4;
     border-radius: 6px;
     width: 138px;
     height: 30px;
     background-color: #FFFFFF;
+}
 
+.form__btn {
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    width: 138px;
+    height: 30px;
+    background-color: #FFFFFF;
+}
+
+.form__btn-holder{
+    border-radius: 6px;
+    width: 138px;
+    height: 30px;
 }
 
 .file__input__icon {

@@ -1,0 +1,46 @@
+.navigation {
+  &__logo-holder {
+    max-width: 185px;
+  }
+
+  &nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+
+    &list {
+      list-style: none;
+      margin: 0 60px 0 -20px;
+      padding: 10px 20px 10px 0;
+      display: inline-block;
+    }
+
+    &__button-holder {
+      list-style: none;
+      margin: 0 -10px;
+      padding-left: 30px;
+    }
+
+    &__button-holder li {
+      display: inline-block;
+      padding: 0 10px;
+    }
+
+    &__btn-white {
+      display: block;
+      border: 1px solid #BCD0E5;
+      padding: 10px 20px;
+      border-radius: 4px;
+      background-color: #FFFFFF;
+    }
+
+    &__btn-orange {
+      display: block;
+      padding: 10px 20px;
+      border: none;
+      background-color: #FF9900;
+      border-radius: 4px;
+      color: #fff;
+    }
+  }

@@ -1,0 +1,65 @@
+.sprite {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+
+  .icon {
+    background-image: url("../../photo/icon.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+
+    &_linkedin {
+      background-position: -150px 0;
+    }
+
+    &_youtube {
+      background-position: 0 -200px;
+    }
+
+    &_wiki {
+      background-position: -150px -250px;
+    }
+
+  }
+}
+
+.svg {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+
+
+  .icon1 {
+    background-image: url("../../photo/embed.svg");
+    background-repeat: no-repeat;
+    display: block;
+  }
+
+  .icon2 {
+    background-image: url("../../photo/instagram.svg");
+    background-repeat: no-repeat;
+  }
+
+  .icon3 {
+    background-image: url("../../photo/github.svg");
+    background-repeat: no-repeat;
+  }
+
+  .icon4 {
+    background-image: url("../../photo/tumblr2.svg");
+    background-repeat: no-repeat;
+  }
+
+  .icon5 {
+    background-image: url("../../photo/appleinc.svg");
+    background-repeat: no-repeat;
+  }
+
+  .icon6 {
+    background-image: url("../../photo/html-five.svg");
+    background-repeat: no-repeat;
+  }
+}

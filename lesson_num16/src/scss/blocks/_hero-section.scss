@@ -1,0 +1,48 @@
+.hero-section {
+  &__text-holder {
+    max-width: 518px;
+    width: 50%;
+    font-size: $font-size-global;
+    line-height: $line-height;
+  }
+
+  &__image_holder {
+    max-width: 604px;
+    width: 50%;
+  }
+
+  &__title {
+    font-size: $font-size-title;
+    line-height: 54px;
+  }
+
+  &__button-holder {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  &__btn-orange {
+    margin-right: 30px;
+    color: $white;
+    background-color: $orange;
+    padding: 15px 41px 14px 41px;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+  }
+
+  &__btn-play {
+    color: $orange;
+    padding: 15px 41px 14px 8px;
+    border: none;
+    background-color: $white;
+    text-decoration: underline;
+  }
+
+  &__icon__play {
+    display: inline-block;
+    padding-top: 15px;
+  }
+}

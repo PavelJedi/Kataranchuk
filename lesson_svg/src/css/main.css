@@ -1,0 +1,59 @@
+.sprite {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.sprite .icon {
+  background-image: url("../../photo/icon.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+.sprite .icon_linkedin {
+  background-position: -150px 0;
+}
+.sprite .icon_youtube {
+  background-position: 0 -200px;
+}
+.sprite .icon_wiki {
+  background-position: -150px -250px;
+}
+
+.svg {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.svg .icon1 {
+  background-image: url("../../photo/embed.svg");
+  background-repeat: no-repeat;
+  display: block;
+}
+.svg .icon2 {
+  background-image: url("../../photo/instagram.svg");
+  background-repeat: no-repeat;
+}
+.svg .icon3 {
+  background-image: url("../../photo/github.svg");
+  background-repeat: no-repeat;
+}
+.svg .icon4 {
+  background-image: url("../../photo/tumblr2.svg");
+  background-repeat: no-repeat;
+}
+.svg .icon5 {
+  background-image: url("../../photo/appleinc.svg");
+  background-repeat: no-repeat;
+}
+.svg .icon6 {
+  background-image: url("../../photo/html-five.svg");
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,157 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+  max-width: 1158px;
+}
+
+.header {
+  max-width: 1158px;
+  padding: 38px 0 45px 0;
+  margin: 0 auto;
+  border-bottom: 1px solid #EFEEF3;
+}
+.header__logo-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.header__img {
+  padding-right: 14px;
+}
+
+.service {
+  padding: 57px 0;
+}
+
+.title-wrapper {
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+}
+.title-wrapper .title__subtitle {
+  padding-bottom: 17px;
+  color: #7690A8;
+}
+
+.col {
+  width: calc(100% / 3);
+  padding: 20px 20px 40px;
+}
+
+.block {
+  border: 1px solid #EFEEF3;
+  border-radius: 8px;
+  padding: 44px;
+}
+.block__icon-holder {
+  padding-bottom: 28px;
+}
+.block__icon {
+  border: 1px solid #E1F4F5;
+  border-radius: 10px;
+  padding: 12px;
+}
+.block__title {
+  font-size: 24px;
+}
+
+.footer {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #16133D;
+  padding-bottom: 45px;
+}
+.footer__logo-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.footer__img {
+  padding-right: 14px;
+}
+.footer__title {
+  color: #F2F2F2;
+}
+
+.sprite__icon-holder {
+  max-width: 190px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+.sprite__icon-holder .sprite__icon__inst {
+  background-image: url("../../photo/Group11.svg");
+  background-repeat: no-repeat;
+  background-position: 0 70px;
+  width: 38px;
+  display: inline-block;
+  padding-right: 8px;
+}
+.sprite__icon-holder .sprite__icon__fb {
+  background-image: url("../../photo/Group12.svg");
+  background-repeat: no-repeat;
+  background-position: 0 70px;
+  width: 38px;
+  display: inline-block;
+  padding-right: 8px;
+}
+.sprite__icon-holder .sprite__icon__git {
+  background-image: url("../../photo/Group13.svg");
+  background-repeat: no-repeat;
+  background-position: 0 70px;
+  width: 38px;
+  display: inline-block;
+  padding-right: 8px;
+}
+.sprite__icon-holder .sprite__icon__ball {
+  background-image: url("../../photo/Group14.svg");
+  background-repeat: no-repeat;
+  background-position: 0 70px;
+  width: 38px;
+  display: inline-block;
+  padding-right: 8px;
+}
+.sprite__icon-holder .sprite__icon__twitter {
+  background-image: url("../../photo/Group15.svg");
+  background-repeat: no-repeat;
+  background-position: 0 70px;
+  width: 38px;
+  display: inline-block;
+  padding-right: 8px;
+}

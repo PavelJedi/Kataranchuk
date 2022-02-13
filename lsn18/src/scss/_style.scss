@@ -13,31 +13,28 @@ a {
   text-decoration: none;
 }
 
-.nav {
-  @include breakpoint('md') {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
+.header {
+  padding: 23px 80px 0;
+  position: relative;
 
-.hero-title {
-  font-size: 48px;
-  line-height: 64px;
-  margin: 0 0 40px;
+  &.active {
+    .header__nav {
+      transform: translateX(0);
+    }
 
-  @include breakpoint('md') {
-    font-size: 30px;
-  }
-}
+    .nav-opener {
+      &:before {
+        transform: rotate(45deg) translate(-3px, 25px);
+      }
 
-.first_photo {
-  display: block;
-  max-width: 100%;
+      &:after {
+        transform: rotate(-45deg) translate(0px, -31px);
+      }
 
-  @include breakpoint('md') {
-    width: 100%;
-    max-width: 600px;
-    padding: 0 20px;
+      span {
+        transform: rotate(-45deg) translate(-13px, -18px);
+      }
+    }
   }
 }
 
@@ -45,23 +42,57 @@ a {
   width: 100%;
   max-width: 940px;
   margin: 0 auto;
-  padding-bottom: 100px;
+}
+
+.header__nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  transition: all ease-in-out 0.3s;
 
   @include breakpoint('md') {
-    margin: 0 auto;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 2;
+    background-color: $white;
+    transform: translateX(100%);
   }
 }
 
-.header .container {
-  padding: 23px 0 0;
+.nav-list {
+  list-style: none;
+  margin: 0 60px 0 20px;
+  padding: 10px 0;
+
+  @include breakpoint('md') {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 20px;
+    width: 100%;
+  }
 }
 
-.header .border-shadow {
-  display: block;
-  width: 100%;
-  height: 1px;
-  background-color: #fca311;
-  box-shadow: 0 4px 4px 1px #4a4a4b;
+.nav-item {
+  display: inline-block;
+  padding-right: 20px;
+
+  @include breakpoint('md') {
+    padding: 0;
+    width: 100%;
+  }
+
+  a {
+    @include breakpoint('md') {
+      display: block;
+      text-align: center;
+      padding: 10px;
+    }
+  }
 }
 
 .nav-list {
@@ -70,10 +101,6 @@ a {
   margin-bottom: 30px;
 }
 
-.nav-item {
-  display: inline-block;
-  padding: 0 20px;
-}
 
 .nav-link {
   font-size: 10px;
@@ -86,21 +113,110 @@ a {
   color: #262627;
 }
 
-.hero-section {
-  padding: 34px 0 100px;
+.nav-opener {
+  display: none;
 
   @include breakpoint('md') {
-    width: 100%;
-    margin: 0 auto;
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    z-index: 2;
+  }
+
+  &:before {
+    content: '';
+    top: 0;
+    right: 50%;
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    transform: translateX(-50%);
+    background-color: gray;
+    transition: all ease-in-out 0.3s;
+  }
+
+  &:after {
+    content: '';
+    bottom: 0;
+    width: 40px;
+    height: 2px;
+    right: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    background-color: gray;
+    transition: all ease-in-out 0.3s;
+  }
+
+  span {
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    background-color: gray;
+    transition: all ease-in-out 0.3s;
   }
 }
 
+.hero-section {
+  padding: 34px 0 100px;
+    width: 100%;
+    margin: 0 auto;
+
+  .container {
+    @include breakpoint('md') {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+  }
+
+  .hero-title {
+    font-size: 48px;
+    line-height: 64px;
+    margin: 0 0 40px;
+
+    @include breakpoint('md') {
+      font-size: 30px;
+    }
+  }
+}
+
+.first_photo {
+  display: block;
+  width: 100%;
+
+  @include breakpoint('md') {
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+  }
+}
 
 .about {
   width: 100%;
-  height: 400px;
+  padding: 100px 0;
   padding-top: 10px;
   background-color: #F6F6F6;
+
+  @include breakpoint('md') {
+    margin: 0 auto;
+  }
+
+  .container {
+    @include breakpoint('md') {
+      margin: 0 auto;
+      padding: 0 30px;
+    }
+  }
 }
 
 .text {
@@ -115,6 +231,13 @@ a {
 .texting {
   text-align: center;
   margin-bottom: 25px;
+
+  @include breakpoint('md') {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
 }
 
 .skills-container {
@@ -141,37 +264,39 @@ a {
 }
 
 .image {
-  padding: 0 70px 20px 70px
+  margin-bottom: 24px;
 }
 
 .skills__holder {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: space-between;
 
   @include breakpoint('md') {
-    display: flex;
-    flex-wrap: wrap;
     width: 100%;
   }
-}
 
-.col {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  max-width: 223px;
+  .col {
+    flex-direction: column;
+    max-width: 167px;
+
+    @include breakpoint('md') {
+      width: 100%;
+      padding-bottom: 20px;
+      margin: 0 auto;
+    }
+  }
 }
 
 .skills {
   color: #828282;
   display: inline-block;
-  padding: 0 55px;
-  line-height: 17px;
   margin-bottom: 60px;
+  line-height: 17px;
 }
 
-.skills__text{
+.skills__text {
   margin-bottom: 48px;
 }
 
@@ -185,19 +310,17 @@ a {
 .portfolio {
   max-width: 100%;
   margin: 0 auto;
-  padding-bottom: 100px;
-  padding-top: 100px;
+  padding: 100px 0;
   background-color: #F6F6F6;
 }
 
 .portfolio-images {
   width: 100%;
-  padding: 0 254px 166px 254px;
+  margin: 0 auto;
 }
 
 .portfolio-image {
   display: block;
-  margin-top: 67px;
   max-width: 100%;
   padding: 0;
 }
@@ -214,5 +337,4 @@ a {
   font-size: 34px;
   line-height: 46px;
   text-align: center;
-  margin: 118px 0 44px 0;
 }

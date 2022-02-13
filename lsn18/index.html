@@ -5,45 +5,53 @@
 	<title>Figma</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="src/css/main.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+	        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="src/js/main.js"></script>
 </head>
 <body>
 <header class="header">
-	<div class="container"></div>
-	<nav class="nav">
-		<ul class="nav-list">
-			<li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
-			<li class="nav-item"><a href="#" class="nav-link">About me</a></li>
-			<li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
-			<li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
-			<li class="nav-item"><a href="#" class="nav-link">Contacts</a></li>
-		</ul>
-	</nav>
-	<span class="border-shadow"></span>
+	<div class="container">
+		<nav class="header__nav">
+			<ul class="nav-list">
+				<li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">About me</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Contacts</a></li>
+			</ul>
+		</nav>
+		<button class="nav-opener"><span>
+		</span>
+		</button>
+	</div>
 </header>
 <section class="hero-section">
 	<div class="container">
-		<h1 class="hero-title">Denis Novik</h1>
+		<div class="title-holder">
+			<h1 class="hero-title">Denis Novik</h1>
+		</div>
 		<div>
 			<img src="photo/me.jpg" class="first_photo" alt="image description">
 		</div>
 	</div>
-	<section class="about">
+</section>
+<section class="about">
+	<div class="container">
 		<h1 class="text">About me</h1>
-		<div>
-			<p class="texting">Hi, I'm Denis – UX/UI designer from Minsk.
-				I'm interested in design and everything connected with it.
-			<p class="texting">
-				I'm studying at courses "Web and mobile design
-				interfaces" in IT-Academy.</p>
-			<p class="texting">Ready to implement excellent projects
-				with wonderful people.</p>
-		</div>
-	</section>
+		<p class="texting">Hi, I'm Denis – UX/UI designer from Minsk.
+			I'm interested in design and everything connected with it.
+		<p class="texting">
+			I'm studying at courses "Web and mobile design
+			interfaces" in IT-Academy.</p>
+		<p class="texting">Ready to implement excellent projects
+			with wonderful people.</p>
+	</div>
 </section>
 <section class="skills-container">
 	<div class="skills__text">
-	<h1 class="title_skills">Skills</h1>
-	<strong class="my_skills">I work in such programs as</strong>
+		<h1 class="title_skills">Skills</h1>
+		<strong class="my_skills">I work in such programs as</strong>
 	</div>
 	<div class="skills__holder">
 		<div class="col">
@@ -68,20 +76,21 @@
 		</div>
 	</div>
 </section>
-
 <section class="portfolio">
-	<h1 class="portfolio-tittle">Portfolio</h1>
-	<div class="portfolio-images">
-		<img src="photo/portfolio.png" class="portfolio-image" alt="image-description">
-		<p class="portfolio-paragraph">Online fashion store - Homepage</p>
-	</div>
-	<div class="portfolio-images">
-		<img src="photo/portfolio1.png" class="portfolio-image" alt="image-description">
-		<p class="portfolio-paragraph">Reebok Store - Concept</p>
-	</div>
-	<div class="portfolio-images">
-		<img src="photo/portfolio2.png" class="portfolio-image" alt="image-description">
-		<p class="portfolio-paragraph">Braun Landing Page - Concept</p>
+	<div class="container">
+		<h1 class="portfolio-tittle">Portfolio</h1>
+		<div class="portfolio-images">
+			<img src="photo/portfolio.png" class="portfolio-image" alt="image-description">
+			<p class="portfolio-paragraph">Online fashion store - Homepage</p>
+		</div>
+		<div class="portfolio-images">
+			<img src="photo/portfolio1.png" class="portfolio-image" alt="image-description">
+			<p class="portfolio-paragraph">Reebok Store - Concept</p>
+		</div>
+		<div class="portfolio-images">
+			<img src="photo/portfolio2.png" class="portfolio-image" alt="image-description">
+			<p class="portfolio-paragraph">Braun Landing Page - Concept</p>
+		</div>
 	</div>
 </section>
 </body>

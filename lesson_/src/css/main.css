@@ -1,0 +1,129 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.case-study {
+  margin: 0 auto;
+  padding: 73px 0 211px 0;
+}
+@media (max-width: 767px) {
+  .case-study {
+    padding-bottom: 56px;
+  }
+}
+.case-study__span {
+  margin-bottom: 40px;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.5em;
+}
+.case-study__title {
+  max-width: 456px;
+  letter-spacing: 0.05em;
+  line-height: 64px;
+  padding: 0;
+  margin-bottom: 64px;
+  font-family: "Red Hat Display", sans-serif;
+}
+@media (max-width: 767px) {
+  .case-study__title {
+    margin-bottom: 52px;
+    font-size: 33px;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1122px;
+}
+
+.img-holder {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+  padding-bottom: 50px;
+}
+@media (max-width: 767px) {
+  .img-holder {
+    padding: 0;
+  }
+}
+.img-holder img {
+  max-width: 100%;
+  display: block;
+}
+@media (max-width: 767px) {
+  .img-holder img {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+@media (max-width: 639px) {
+  .img-holder img {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+.case-study__description-holder {
+  padding-top: 130px;
+  max-width: 544px;
+}
+@media (max-width: 767px) {
+  .case-study__description-holder {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 56px 15px 0 15px;
+  }
+}
+@media (max-width: 639px) {
+  .case-study__description-holder {
+    padding-top: 48px;
+  }
+}
+
+.case-study__description {
+  font-size: 19px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  color: #565656;
+}
+
+.case-study__pseudo-title {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: normal;
+  font-size: 23px;
+  letter-spacing: 0.1em;
+  margin-bottom: 40px;
+}
+
+.case-study-section {
+  margin-bottom: 128px;
+}
+@media (max-width: 767px) {
+  .case-study-section {
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 639px) {
+  .case-study-section {
+    margin-bottom: 65px;
+  }
+}

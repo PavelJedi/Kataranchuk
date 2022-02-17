@@ -1,0 +1,124 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.case-study {
+  margin: 0 auto;
+  padding: 73px 0 211px 0;
+
+  @include breakpoint('md'){
+    padding-bottom: 56px;
+  }
+
+  &__span {
+    margin-bottom: 40px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.5em;
+  }
+
+  &__title {
+    max-width: 456px;
+    letter-spacing: 0.05em;
+    line-height: 64px;
+    padding: 0;
+    margin-bottom: 64px;
+    font-family: 'Red Hat Display', sans-serif;
+
+    @include breakpoint('md') {
+      margin-bottom: 52px;
+      font-size: 33px;
+    }
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1122px;
+}
+
+.img-holder {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+  padding-bottom: 50px;
+
+  @include breakpoint('md') {
+    padding: 0;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+
+    @include breakpoint('md') {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    @include breakpoint('sm') {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
+    }
+  }
+}
+
+.case-study__description-holder {
+  padding-top: 130px;
+  max-width: 544px;
+
+    @include breakpoint('md') {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 56px 15px 0 15px;
+    }
+
+    @include breakpoint('sm') {
+      padding-top: 48px;
+    }
+  }
+
+
+.case-study__description {
+  font-size: 19px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  color: #565656;
+}
+
+.case-study__pseudo-title {
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: normal;
+  font-size: 23px;
+  letter-spacing: 0.1em;
+  margin-bottom: 40px;
+}
+
+.case-study-section {
+  margin-bottom: 128px;
+
+  @include breakpoint('md'){
+    margin-bottom: 100px;
+  }
+
+  @include breakpoint('sm'){
+    margin-bottom: 65px;
+  }
+}
+
+
+
+

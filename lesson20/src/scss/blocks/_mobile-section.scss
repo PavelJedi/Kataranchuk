@@ -1,0 +1,45 @@
+.mobile-section{
+  padding-top: 77px;
+  background-color: $white;
+  text-align: center;
+  position: relative;
+
+  &__title-holder {
+    margin: 0 auto;
+    max-width: 920px;
+  }
+
+  .monile-section__title-holder{
+    background-color: #FAC960;
+    width: 100%;
+    padding-top: 54px;
+    position: absolute;
+    bottom: 0;
+  }
+
+  &__title{
+    margin-bottom: 32px;
+    color: $black-opacity;
+    font-weight: 400;
+    font-size: 37px;
+    line-height: 36px;
+  }
+
+  &__desc{
+    color: $black-opacity;
+    font-size: 23px;
+    line-height: 30px;
+    margin-bottom: 33px;
+  }
+
+  .mob{
+    padding-top: 56px;
+    max-width: 381px;
+  }
+
+  &__btn{
+    width: 61px;
+    height: 22px;
+    margin-bottom: 107px;
+  }
+}

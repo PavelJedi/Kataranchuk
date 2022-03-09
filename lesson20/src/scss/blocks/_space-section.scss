@@ -1,0 +1,29 @@
+.space-section{
+  padding: 77px 0 81px;
+  background-color: $grey;
+  text-align: center;
+
+  &__title-holder {
+    margin: 0 auto;
+    max-width: 920px;
+  }
+
+  &__title{
+    margin-bottom: 32px;
+    color: $black-opacity;
+    font-weight: 400;
+    font-size: 37px;
+    line-height: 36px;
+  }
+
+  &__desc{
+    color: $black-opacity;
+    font-size: 23px;
+    line-height: 30px;
+  }
+
+  .space{
+    padding-top: 56px;
+    max-width: 186px;
+  }
+}

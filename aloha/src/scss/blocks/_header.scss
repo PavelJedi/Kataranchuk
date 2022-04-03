@@ -1,0 +1,159 @@
+.header {
+  padding-top: 40px;
+  margin-bottom: 124px;
+  max-width: 1036px;
+  position: relative;
+
+  @include breakpoint('md'){
+    max-width: 100%;
+    margin-bottom: 165px;
+  }
+
+  &.active {
+    transition: all ease-in-out 0.3s;
+    .nav {
+      transform: translateX(600%);
+    }
+
+    .nav-opener {
+      &:before {
+        transform: rotate(45deg) translate(-2px, 25px);
+      }
+
+      &:after {
+        transform: rotate(-45deg) translate(0px, -31px);
+      }
+
+      span {
+        transform: rotate(-45deg) translate(-13px, -18px);
+      }
+    }
+  }
+
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .logo-holder {
+    max-width: 110px;
+  }
+
+  .nav-holder {
+    width: calc(100% - 110px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .nav{
+    @include breakpoint('md') {
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      left: 0;
+      max-width: 100%;
+      padding: 20px 0 0 0;
+      z-index: 2;
+      transform: translateX(-100%);
+      transition: all ease-in-out 0.3s;
+    }
+  }
+
+  .nav-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+
+    @include breakpoint('md') {
+      display: flex;
+      flex-direction: column;
+      margin: 0 0 20px;
+      width: 100%;
+    }
+  }
+
+  .nav-item {
+    margin: 0 36px 0 0;
+    color: $brown;
+    line-height: $line-h;
+    font-size: $sm-size;
+
+    @include breakpoint('md') {
+      padding: 0;
+      width: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .nav-link {
+    @include breakpoint('md') {
+      display: block;
+      text-align: center;
+      padding: 10px;
+    }
+  }
+
+  .nav-opener {
+    display: none;
+
+    @include breakpoint('md') {
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      z-index: 3;
+    }
+
+    &:before {
+      content: '';
+      top: 0;
+      left: 50%;
+      width: 40px;
+      height: 2px;
+      position: absolute;
+      transform: translateX(-50%);
+      background-color: gray;
+      transition: all ease-in-out 0.3s;
+    }
+
+    &:after {
+      content: '';
+      bottom: 0;
+      width: 40px;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      transform: translateX(-50%);
+      background-color: gray;
+      transition: all ease-in-out 0.3s;
+    }
+
+    span {
+      width: 40px;
+      height: 2px;
+      border-radius: 4px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: gray;
+      transition: all ease-in-out 0.3s;
+    }
+  }
+
+}

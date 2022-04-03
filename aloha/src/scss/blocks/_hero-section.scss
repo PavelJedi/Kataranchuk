@@ -1,0 +1,18 @@
+.hero-section{
+  margin-bottom: 136px;
+
+  .container{
+    max-width: 1400px;
+  }
+
+  .hero-title{
+    font-size: $bg-size;
+    line-height: $bg-line-height;
+    color: $brown;
+    max-width: 1400px;
+
+    @include breakpoint('md'){
+      font-size: 50px;
+    }
+  }
+}

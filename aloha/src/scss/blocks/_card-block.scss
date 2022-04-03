@@ -1,0 +1,68 @@
+.card-block {
+
+  .container {
+
+  }
+
+  .card-holder {
+    margin-bottom: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @include breakpoint('md'){
+      flex-direction: column;
+    }
+  }
+
+  .card-second{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-bottom: 90px;
+  }
+
+  .image-holder {
+    width: 50%;
+    padding-right: 100px;
+
+    @include breakpoint('md'){
+      width: 100%;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  .text-holder {
+    width: 50%;
+
+    @include breakpoint('md'){
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .card-image {
+    max-width: 590px;
+  }
+
+  .text-description {
+    color: $brown;
+    font-size: $md-size;
+    line-height: $md-line-height;
+
+    @include breakpoint('md'){
+      font-size: 25px;
+    }
+  }
+
+  .text-btn {
+    color: $brown;
+    border: 2px solid $brown;
+    border-radius: 3px;
+    padding: 11px 17px;
+  }
+}

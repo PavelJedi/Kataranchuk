@@ -1,0 +1,74 @@
+.quote-block{
+  margin-bottom: 189px;
+
+  .container{
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  .quote-card{
+    background-color: $brown;
+    border-radius: 16px;
+    max-width: 1400px;
+    min-height: 476px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 40px 80px 40px;
+    margin: 0 0 84px 0;
+  }
+
+  .quote-line{
+    color: $white;
+    font-size: $bg-size;
+    line-height: $bg-line-height;
+    margin-bottom: 45px;
+    max-width: 1180px;
+
+    @include breakpoint('md'){
+      font-size: 50px;
+    }
+  }
+
+  figcaption{
+    padding: 0;
+    color: $white;
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  blockquote{
+    margin: 0;
+  }
+
+  .text-holder{
+    max-width: 838px;
+    margin-left: 40px;
+
+    @include breakpoint('md'){
+      text-align: center;
+    }
+  }
+
+  .desc_holder{
+    margin-bottom: 56px;
+  }
+
+  .text-description{
+    color: $brown;
+    font-size: $bg-size;
+    line-height: $bg-line-height;
+
+    @include breakpoint('md'){
+      font-size: 50px;
+    }
+  }
+
+  .text-btn{
+    color: $brown;
+    border: 2px solid $brown;
+    border-radius: 3px;
+    padding: 10px 17px;
+  }
+
+}

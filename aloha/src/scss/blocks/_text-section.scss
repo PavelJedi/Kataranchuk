@@ -1,0 +1,33 @@
+.text-section {
+  margin-bottom: 90px;
+
+  .container {
+    max-width: 1320px;
+  }
+
+  .middle-text {
+    margin-bottom: 56px;
+    color: $brown;
+    line-height: $bg-line-height;
+    font-size: $bg-size;
+    max-width: 1319px;
+
+    @include breakpoint('md') {
+      font-size: 50px;
+    }
+  }
+
+  .text-btn {
+    color: $brown;
+    border: 2px solid $brown;
+    border-radius: 3px;
+    padding: 11px 17px;
+
+    .btn-holder {
+      @include breakpoint('md') {
+        text-align: center;
+      }
+    }
+  }
+}
+

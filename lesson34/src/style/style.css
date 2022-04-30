@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    padding-bottom: 30px;
+}
+
+.image-block {
+    width: 50%;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-holder {
+    width: 40%;
+}
+
+.info {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.desc-holder{
+    margin-bottom: 30px;
+}
+
+.buy {
+    text-decoration: none;
+    width: 25%;
+    display: block;
+    text-align: center;
+    border: none;
+    border-radius: 100px;
+    padding: 10px;
+    color: white;
+    background-color: #5500ff;
+}
+
+.col{
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.images{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-holder{
+    width: 20%;
+}

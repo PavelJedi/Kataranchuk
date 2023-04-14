@@ -1,0 +1,56 @@
+.imageHolder {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.pic {
+  border: 5px solid #f2f2f7;
+  border-radius: 150px;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.title {
+  color: #081f32;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 56px;
+  margin-bottom: 48px;
+}
+
+.span {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #8e8e93;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.preTitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #081f32;
+}
+
+.option {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: #6e798c;
+  padding-bottom: 12px;
+  // border-bottom: 1px solid rgba(33, 33, 33, 0.08);
+}
